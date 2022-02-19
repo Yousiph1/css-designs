@@ -8,54 +8,62 @@
 
 <body>
 <header>
- <nav style="background-color: aqua">
- <h1 class="logo-container">
+ <nav class="nav-container" >
+ <h1 class="logo">
  stripe
  </h1>
- <ul>
-  <li><a href="products">Products</a></li>
+ <ul class="nav-list-links">
+  <li><a href="products" >Products</a></li>
   <li><a href="usecase">Use cases</a></li>
   <li><a href="developer">Developers</a></li>
   <li><a href="company">Company</a></li>
   <li><a href="pricing">Pricing</a></li>
  </ul>
-  <a href="nothing.haha" class = "sign-in">
+ 
+  <a href="nothing.haha" class = "animated-link">
   	<span>Sign in</span>
-  	<svg class="HoverArrow" 
+  	&nbsp;
+  	<svg class="hover-arrow" 
   	width="10" height="10" viewBox="0 0 10 10" aria-fill="green">
   <g fill-rule="evenodd">
-    <path class="HoverArrow__linePath" d="M0 5h7"></path>
-      <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+    <path class="hover-arrow-line" d="M0 5h7"></path>
+      <path class="hover-arrow-tip" d="M1 1l4 4-4 4"></path>
   </g>
 </svg>
   </a>
  </nav>
- <div class="gradient-container"></div>
+ <div class="gradient-container">
+ 	<div class="gradient">
+ 	</div>
+ </div>
  
-  <main>
-  	<div>
-    <h1>Payment infrastructure for the internet</h1>
-    <p>Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
+  <main class="main-landing">
+  
+  	<div class = "main-left">
+    <h1 class = "main-heading">Payment infrastructure for the internet</h1>
+    <p class = "heading-message">Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
     
     <div>
-    <a href="startnow">
+    <a href="startnow" class="animated-link link-fav-action">
      <span>Start now</span>
-     	<svg class="HoverArrow" 
+     &nbsp;
+     	<svg class="hover-arrow" 
   	width="10" height="10" viewBox="0 0 10 10" aria-fill="green">
   <g fill-rule="evenodd">
-    <path class="HoverArrow__linePath" d="M0 5h7"></path>
-      <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+    <path class="hover-arrow-line" d="M0 5h7"></path>
+      <path class="hover-arrow-tip" d="M1 1l4 4-4 4"></path>
   </g>
 </svg>
     </a>
     
-    <a href="">
+    <a href="" class = "animated-link link-sec-action">
      <span>Contact sales</span>
-     	<svg class="HoverArrow" 
+     &nbsp;
+     	<svg class="hover-arrow" 
   	width="10" height="10" viewBox="0 0 10 10" aria-fill="green">
   <g fill-rule="evenodd">
-    <path class="HoverArrow__linePath" d="M0 5h7"></path>
-      <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+    <path class="hover-arrow-line" d="M0 5h7"></path>
+      <path class="hover-arrow-tip" d="M1 1l4 4-4 4"></path>
   </g>
 </svg>
     </a>
@@ -63,14 +71,16 @@
     
   	</div>
   	
-  	<div>
-    <figure>
-       <div>
+  	
+  	<div class = "main-right">
+  	
+    <figure class="increment-phone-container">
+       <div class="phone-container">
        	
-       	<div>
+       	<div class="phone-top">
        	 
-       	 <div>
-       	  <svg class="HomepageIncrementPhone__image" viewBox="0 0 460 700">
+       	 <div class="image-container">
+       	  <svg class="increment-image" viewBox="0 0 460 700">
         <rect width="460" height="700" fill="#44B7BC" rx="40"></rect>
         <g transform="translate(0 48)">
           <polygon fill="#000" points="0 43.138 203 0 203 54.028 0 97.271"></polygon>
@@ -79,7 +89,7 @@
         <polygon fill="#000" points=".001 396.001 108.001 304.001 108.001 432.001 .001 432.001"></polygon>
         <path fill="#000" d="M62.93 647.13c11.7 0 19.72-5.63 19.72-15 0-8.4-4.5-12.75-13.2-15l-8.7-2.25c-4.87-1.28-7.27-3.08-7.27-6.98 0-3.67 3.3-6 8.7-6 4.65 0 8.85 1.65 9.45 7.35h9.75c-1.05-10.65-8.55-15.37-19.05-15.37-11.4 0-18.6 5.85-18.6 14.1 0 7.5 4.05 12.6 12.37 14.77l9.98 2.63c4.57 1.2 6.82 3.22 6.82 6.82 0 4.43-4.42 6.9-10.12 6.9-6 0-9.98-2.32-10.8-8.32h-9.75c.9 11.85 9.37 16.35 20.7 16.35zm38.65-.23c9.22 0 15.6-4.95 16.8-13.42H109c-.45 3.9-3.3 6.15-7.35 6.15s-7.57-2.63-7.57-7.2v-2.55h24.6v-4.73c0-10.5-6.75-18.3-17.1-18.3-10.35 0-17.25 7.95-17.25 19.95s6.37 20.1 17.25 20.1zm7.5-24.3h-15v-1.35c0-4.12 3.22-7.12 7.5-7.12 4.27 0 7.5 3 7.5 7.12v1.35zM9 458c58.96 0 107 22.88 107 52S67.96 562 9 562c-3.03 0-6.03-.06-9-.18v-4c2.97.12 5.97.18 9 .18 57.02 0 103-21.9 103-48S66.02 462 9 462c-3.03 0-6.03.06-9 .18v-4c2.97-.12 5.97-.18 9-.18zM376.96 0c-.63 3.9-.96 7.91-.96 12 0 40.33 31.8 73 71 73 4.44 0 8.79-.42 13-1.22v4.07A73.58 73.58 0 0 1 447 89c-41.43 0-75-34.48-75-77 0-4.08.31-8.09.9-12h4.06z"></path>
       </svg>
-      	  <svg class="HomepageIncrementPhone__image HomepageIncrementPhone__image--front" viewBox="0 0 460 700">
+      	  <svg class="increment-image" viewBox="0 0 460 700">
         <defs>
           <linearGradient id="HomepageIncrementPhone__imageGradientA" x1="50%" x2="50%" y1="0%" y2="88.24%">
             <stop offset="0%" stop-color="#AC9CC0"></stop>
@@ -132,6 +142,7 @@
         <path fill="url(#HomepageIncrementPhone__imageGradientH)" d="M22.18 561.36c23.26 23.48 58.34 36.87 104.91 37.14H340c46.1 0 90.76 22.88 120 57.03V660a40.02 40.02 0 0 1-27.94 38.15c-18.82-29.08-54.21-51-90.45-51.64l-213.1-.01c-52.72 0-96.33-14.18-128.5-40.52V528.2a105.93 105.93 0 0 0 22.17 33.17z"></path>
       </svg>
        	 </div>
+       	 
        	 <h5>Increment magazine</h5>
        	 <h6>$14 per quarter</h6>
        	 <button>Apple Pay</button>
@@ -164,6 +175,7 @@
        	
        </div>
     </figure>
+    
   	</div>
   	
   </main>
