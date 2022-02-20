@@ -254,6 +254,7 @@ a {
 	border-radius: 25px;
 }
 
+
 .phone-container {
 	background-color: white;
 	border-radius: 25px;
@@ -286,7 +287,11 @@ a {
 .phone-top h6 {
 	color: gray;
 }
+
 .increment-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: none;
 	width:  100%;
 	background-color: var(--accentColor);
@@ -294,6 +299,12 @@ a {
 	padding: .5em;
 	border-radius: 5px;
 	margin-top: 20px;
+}
+
+.increment-button svg {
+	fill: white;
+	width: 15px;
+	height: 20px;
 }
 
 .divider {
@@ -414,16 +425,221 @@ a {
 }
 
 .diagrams-container {
+	margin-top: 50px;
 	display: flex;
 	width: 100%;
 }
 
 .d-first{
-	flex-basis: 30%;
-	
-	height: 200px;
-	border: 2px solid black;
+    padding: 50px 20px;
+	flex-basis: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+.card {
+	position: relative;
+	background-color: black;
+	height: 200px;
+	width: 300px;
+	padding: 20px;
+	border-radius: 25px;
+	color: white;
+	overflow: hidden;
+	box-shadow: 0 10px 100px -30px black;
+}
+
+.card-head {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-text {
+	font-size: 14px;
+	font-weight: normal
+}
+
+.card-end {
+	height: 80px;
+	width: 80px;
+	background-color: yellow;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -50px;
+	border-radius: 50%;
+}
+
+
+.card-body-blob {
+	position: relative;
+	height: 18px;
+	left: 55%;
+	top:30px;
+	width: 30px;
+	border-radius: 0  12px 12px 30px;
+	background-color: yellow
+}
+
+.card-body-blob::after {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: -35px;
+	height: 18px;
+	width: 30px;
+	border-radius: 30px 12px 12px 0;
+	background-color: lightgrey;
+}
+
+.card-body-blob::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: -50px;
+	height: 12px;
+	width: 10px;
+	border-radius: 0 0 10px 10px;
+	background-color: lightgrey;
+}
+.card-chip-container {
+	margin-bottom: 50px;
+	width: 70px;
+	margin-left: 20px;
+}
+
+
+.card-foot {
+	align-items: center
+}
+
+
+.diagram-phone {
+	align-self: flex-end;
+	margin-top: 50px;
+	background-color: lightgray;
+	height: 550px;
+	width: 270px;
+	padding: 2px;
+	padding-top: 1px;
+	border-radius: 40px;
+	background: #f6f9fc;
+}
+
+.d-phone-2{
+	padding: 5px;
+	background-color: white;
+	border-radius: 40px;
+	height: 100%;
+	box-shadow: 0 10px 100px -60px gray;
+}
+.d-phone-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	background-color: lightgrey;
+	border-radius: 40px;
+	height: 100%;
+}
+
+.d-phone-top {
+	padding: 20px 10px 15px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.d-phone-top button {
+	margin-top: 10px;
+}
+
+.nice-header {
+	color: var(--textColor);
+	letter-spacing: 2px;
+}
+.glasses {
+	margin: 15px 0;
+}
+
+.d-phone-top p {
+	margin-top: 5px;
+	font-size: 0.7rem
+}
+.d-i-container {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.d-indicators {
+	position: relative;
+	height: 10px;
+	width: 10px;
+	background-color: var(--accentColor);
+	border-radius: 50%;
+}
+
+.d-indicators:nth-of-type(1)::after {
+content: "";
+position: absolute;
+height: 12px;
+width: 12px;
+top: -3px;
+left: -3px;
+border-radius: 50%;
+border: 2px solid var(--accentColor
+)
+	
+}
+
+.yellow {
+	background-color: var(--accentColorT)
+}
+.green {
+	background-color: lightblue
+}
+.blue {
+	background-color: orange
+}
+
+.d-phone-bottom {
+  background-color: white;
+  background-color: white;
+  border-radius: 10px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  height: 323px;
+  width: 97%;
+  padding-left: 10px;
+}
+.prompt-pay-c {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.p-com {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+.p-com svg {
+	width: 20px;
+	height: 15px;
+}
+.p-cancel {
+	color: deepskyblue
+}
+
+
+
 
 .d-second {
 	background-color: blue;
