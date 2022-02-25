@@ -705,6 +705,7 @@ border: 2px solid var(--accentColor
 .d-second {
 	padding: 50px 0;
 	flex-basis: 70%;
+	overflow-x: hidden;
 	padding-left: 50px;
 }
 .d-second-top {
@@ -721,7 +722,7 @@ border: 2px solid var(--accentColor
 	border-radius: 8px;
 	display: grid; 
 	place-items: center;
-	padding: 50px 0;
+	padding: 50px 10px;
 }
 
 .slack::before {
@@ -749,8 +750,8 @@ border: 2px solid var(--accentColor
 	flex-direction: column;
 	align-items: center;
 	z-index: 1;
+	width: 80%;
 	background-color: white;
-	width: 350px;
 	border-radius: 5px;
 	box-shadow: 0 10px 100px -60px gray;
 }
@@ -763,6 +764,13 @@ border: 2px solid var(--accentColor
 	box-shadow: 0 0 1px gray;
 	background-color: white;
 	margin-bottom: 10px;
+	display: grid;
+	place-items: center;
+}
+
+.slack-logo svg {
+	width: 30px;
+	height: 30px;
 }
 
 .slack-inner p {
@@ -771,13 +779,11 @@ border: 2px solid var(--accentColor
 }
 
 .slack-pay {
-	display: flex;
+	display: grid;
 	margin-top: 5px;
-	padding: 20px 50px;
-	flex-direction: column;
-	align-items: center;
+	padding: 20px 20px;
 	width: 100%;
-	height: auto;
+	place-items: center;
 	background-color: var(--backgroundColor)
 }
 .slack-pay p {
@@ -826,7 +832,91 @@ border: 2px solid var(--accentColor
 
 
 
+.d-b-picture {
+	width: 100%;
+	margin-top: 50px;
+	border-radius: 5px;
+	overflow-x: hidden;
+	box-shadow: 0 10px 100px -60px gray;
+}
 
+.code-container {
+	transform: skewY(-5deg);
+	margin-top: -130px;
+	padding: 150px 0;
+	background-color: var(--backgroundColor);
+	--backgroundColor: #0a2540;
+	--accentColor: #02bcf5;
+	--accentColor2: #00d4ff;
+	--cardBackground: #0c2e4e;
+	--textColor: #adbdcc
+}
+
+
+
+.code-i-container {
+   display: grid;
+	grid-template-columns: 1fr 1fr;
+   padding: 0 var(--rootPadding);
+   transform: skewY(5deg)
+}
+
+.code-info-header {
+	color: var(--accentColor);
+	font-size: 1.2rem;
+	margin: 1em 0;
+}
+.code-header-b {
+	font-size: 2rem;
+	color: white;
+	margin: 1em 0;
+	max-width: 90%
+}
+.code-p {
+	color: var(--textColor);
+	line-height: 1.5;
+	font-size: 1.2rem;
+	margin-bottom: 2em;
+	max-width: 90%
+}
+.code-info-top a {
+	color: var(--backgroundColor);
+}
+
+.code-info-bottom {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 25px;
+}
+
+.c-i-b-c {
+
+}
+
+.c-i-b-c h5 {
+	color: white;
+	font-size: 1rem;
+	border-left: 1px solid var(--accentColor);
+	padding-left: 1em;
+}
+
+.c-i-b-c p {
+	color: var(--textColor);
+	margin: 1em 0;
+	line-height: 1.4;
+	padding-left: 1em;
+	max-width: 90%
+}
+
+.c-i-b-c a {
+	margin-left: .2em
+}
+
+.code-logo {
+	margin: 0;
+	padding: 0;
+}
 
 
 
