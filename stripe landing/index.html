@@ -851,7 +851,7 @@
   </section>
   
   
-  
+
 <section class="code-container">
 	
 <div class="code-i-container">
@@ -930,8 +930,6 @@ We agonize over the right abstractions so your teams don’t need to stitch toge
       </clipPath>
     </defs>
 
-    <use transform="translate(-13, -6)" style="visibility: hidden;"></use>
-    <use transform="translate(-65, -30)" style="visibility: hidden;"></use>
 
     <use href="#blocksIconFront" fill="var(--blendBackground)" style="opacity: 0;"></use>
     <use fill="var(--blendForeground)" style="opacity: 0;"></use>
@@ -967,26 +965,280 @@ We agonize over the right abstractions so your teams don’t need to stitch toge
 		
 	</div>
 	
-	<div class="code-t-container"></div>
+	<div class="code-t-container">
+		
+		<div class="editor">
+		  <div class="editor-line">
+		  	<p class="line-num" >1</p>
+		  	<p class="line">
+		  	<span class="key-word">const</span>
+		  	 stripe = <span class="func">require</span>(<span class="string">"stripe"</span>)(<span class="string">"sk_test_BESlKQabvCD</span>);
+		  	</p>
+		  </div>
+		  
+		   <div class="editor-line">
+		  	<p class="line-num">2</p>
+		  	<p class="line">
+		  	</p>
+		  </div>
+		  
+		  <div class="editor-line" style="animation-delay: 2s">
+		  	<p class="line-num">3</p>
+		  	<p class="line">
+		  		<span class="key-word">await</span>
+		  		stripe.paymentIntents.<span class="func">create</span>
+		  		({
+		  	</p>
+		  </div>
+		  
+		  <div class="editor-line" style="animation-delay: 4s">
+		  	<p class="line-num">4</p>
+		  	<p class="line">
+		  		amount: <span class="ed-number">200</span>,
+		  	</p>
+		  </div>
+		  
+		  <div class="editor-line" style="animation-delay: 5s">
+		  	<p class="line-num">5</p>
+		  	<p class="line">
+		  		currency: <span class="string">"usd"</span>
+		  	</p>
+		  </div>
+		  
+		  <div class="editor-line" style="animation-delay: 5.5s">
+		  	<p class="line-num">6</p>
+		  	<p class="line">
+		  		});
+		  	</p>
+		  </div>
+		  <div class="editor-line"><p class="line-num">~</p></div>
+		  <div class="editor-line"><p class="line-num">~</p></div>
+		  <div class="editor-line"><p class="line-num">~</p></div>
+		  <div class="editor-line"><p class="line-num">~</p></div>
+		  <div class="editor-line"><p class="line-num">~</p></div>
+		  <div class="editor-line"><p class="line-num">~</p></div>
+		  <div class="editor-line"><p class="line-num">~</p></div>
+		</div>
+		
+		<div class="e-t-separator">
+		<div class="big-label">
+			<p>Normal</p>
+		</div>
+		 
+		 <div class="e-t-s-i">
+		 	<p class="key-word">server</p>
+		 	<p>600%   6/1  ln  :  4</p>
+		 </div> 
+		</div>
+		<div class="terminal">
+			<div class="editor-line">
+			<p>
+			<span class="key-word">$</span>
+			node server.js && stripe listen
+			</p>
+			</div>
+			<div class="editor-line">
+				<p>>Read! waiting for requests...</p>
+			</div>
+			<div class="editor-line">
+			 <p>
+			 <span class="line-num">22-02-05 17:04:53</span>[<span class="rp-ok">200</span>] payment_intent.created
+			 </p>
+			</div>
+			<div class="editor-line">
+				<p>
+			 <span class="line-num">22-02-05 17:04:53</span>[<span class="rp-ok">200</span>] change.succeeded
+			 </p>
+			</div>
+			<div class="editor-line">
+				<p>
+			 <span class="line-num">22-02-05 17:04:53</span>[<span class="rp-ok">200</span>] payment_intent.succeeded
+			 </p>
+			</div>
+		</div>
+	</div>
 	
 </div>
 	
 	
 </section>
+
+
+
+ 
+<section class="why-container">
+<div class="un-s-b">
+	<div class="sb-1"></div>
+	<div class="sb-2"></div>
+</div>
+
+<div class="why-content">
+ <h5 class="why-header">Why stripe</h5>
+ <h3 class="why-header-b">A technology-first approach to payments and finance</h3>
+ 
+ <div class="why-bottom">
+ 	
+ 	<div class="c-i-b-c">
+		<div class="code-logo">
+			<svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="TerminalIcon">
+      <defs>
+      <path id="terminalIconCode" d="M44 28a4 4 0 0 1 4 4v17a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h24zm-23.2 5.17l-.67.75a.5.5 0 0 0-.02.64l.06.06 3.29 2.92-3.3 2.92a.5.5 0 0 0-.03.7l.66.76c.18.2.5.22.7.04l4.97-4.42-4.96-4.41a.5.5 0 0 0-.7.04z"></path>
+      <path id="terminalIconCursor" d="M27.64 40h6.72c.22 0 .3.02.38.07.09.04.15.1.2.19.04.08.06.16.06.38v.72c0 .22-.02.3-.07.38a.45.45 0 0 1-.19.2c-.08.04-.16.06-.38.06h-6.72c-.22 0-.3-.02-.38-.07a.45.45 0 0 1-.2-.19c-.04-.08-.06-.16-.06-.38v-.72c0-.22.02-.3.07-.38.04-.09.1-.15.19-.2.08-.04.16-.06.38-.06z"></path>
+      <path id="terminalIconGear" d="M42.5 42l1.13 3.13.64.13 2.24-2.46.93.38-.16 3.33c.19.11.37.23.54.36l3.02-1.42.7.71-1.41 3.02c.13.17.25.35.36.54l3.33-.16.38.93-2.46 2.24c.05.21.1.42.13.64L55 54.5v1l-3.13 1.13c-.04.25-.1.5-.15.73l2.48 2.15-.38.93-3.28-.24c-.14.24-.3.47-.47.7l1.48 2.94-.71.7-2.94-1.47c-.23.17-.46.33-.7.47l.24 3.28-.93.38-2.15-2.48c-.27.06-.54.12-.82.16L42.5 68h-1l-1.04-3.12c-.28-.04-.55-.1-.82-.16l-2.15 2.48-.93-.38.24-3.28c-.24-.14-.47-.3-.7-.47l-2.94 1.48-.7-.71 1.47-2.94c-.17-.23-.33-.46-.47-.7l-3.28.24-.38-.93 2.48-2.15a9.95 9.95 0 0 1-.16-.82L29 55.5v-1l3.12-1.04c.04-.25.08-.49.14-.73l-2.46-2.24.38-.93 3.33.16c.11-.19.23-.37.36-.54l-1.42-3.02.71-.7 3.02 1.41c.17-.13.35-.25.54-.36l-.16-3.33.93-.38 2.24 2.46s.42-.1.64-.13L41.5 42h1zM42 53a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+      <clipPath id="terminalIconClipPath">
+        <use href="#terminalIconCode"></use>
+      </clipPath>
+    </defs>
+
+    <use href="#terminalIconCode" fill="var(--blendForeground)"></use>
+    <use href="#terminalIconCursor" fill="var(--knockoutColor)" data-js-target="TerminalIcon.cursor"></use>
+    <use href="#terminalIconGear" fill="var(--blendBackground)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+    <g clip-path="url(#terminalIconClipPath)">
+      <use href="#terminalIconGear" fill="var(--blendIntersection)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+    </g>
+    </svg>
+		</div>	
+		 <h5>Close to the metal</h5>
+		 <p>
+		 	From direct integrations with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack.
+		 </p>
+ </div>
+ 
+ 	<div class="c-i-b-c">
+		<div class="code-logo">
+			<svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="TerminalIcon">
+      <defs>
+      <path id="terminalIconCode" d="M44 28a4 4 0 0 1 4 4v17a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h24zm-23.2 5.17l-.67.75a.5.5 0 0 0-.02.64l.06.06 3.29 2.92-3.3 2.92a.5.5 0 0 0-.03.7l.66.76c.18.2.5.22.7.04l4.97-4.42-4.96-4.41a.5.5 0 0 0-.7.04z"></path>
+      <path id="terminalIconCursor" d="M27.64 40h6.72c.22 0 .3.02.38.07.09.04.15.1.2.19.04.08.06.16.06.38v.72c0 .22-.02.3-.07.38a.45.45 0 0 1-.19.2c-.08.04-.16.06-.38.06h-6.72c-.22 0-.3-.02-.38-.07a.45.45 0 0 1-.2-.19c-.04-.08-.06-.16-.06-.38v-.72c0-.22.02-.3.07-.38.04-.09.1-.15.19-.2.08-.04.16-.06.38-.06z"></path>
+      <path id="terminalIconGear" d="M42.5 42l1.13 3.13.64.13 2.24-2.46.93.38-.16 3.33c.19.11.37.23.54.36l3.02-1.42.7.71-1.41 3.02c.13.17.25.35.36.54l3.33-.16.38.93-2.46 2.24c.05.21.1.42.13.64L55 54.5v1l-3.13 1.13c-.04.25-.1.5-.15.73l2.48 2.15-.38.93-3.28-.24c-.14.24-.3.47-.47.7l1.48 2.94-.71.7-2.94-1.47c-.23.17-.46.33-.7.47l.24 3.28-.93.38-2.15-2.48c-.27.06-.54.12-.82.16L42.5 68h-1l-1.04-3.12c-.28-.04-.55-.1-.82-.16l-2.15 2.48-.93-.38.24-3.28c-.24-.14-.47-.3-.7-.47l-2.94 1.48-.7-.71 1.47-2.94c-.17-.23-.33-.46-.47-.7l-3.28.24-.38-.93 2.48-2.15a9.95 9.95 0 0 1-.16-.82L29 55.5v-1l3.12-1.04c.04-.25.08-.49.14-.73l-2.46-2.24.38-.93 3.33.16c.11-.19.23-.37.36-.54l-1.42-3.02.71-.7 3.02 1.41c.17-.13.35-.25.54-.36l-.16-3.33.93-.38 2.24 2.46s.42-.1.64-.13L41.5 42h1zM42 53a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+      <clipPath id="terminalIconClipPath">
+        <use href="#terminalIconCode"></use>
+      </clipPath>
+    </defs>
+
+    <use href="#terminalIconCode" fill="var(--blendForeground)"></use>
+    <use href="#terminalIconCursor" fill="var(--knockoutColor)" data-js-target="TerminalIcon.cursor"></use>
+    <use href="#terminalIconGear" fill="var(--blendBackground)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+    <g clip-path="url(#terminalIconClipPath)">
+      <use href="#terminalIconGear" fill="var(--blendIntersection)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+    </g>
+    </svg>
+		</div>	
+		 <h5>Fastest-improving platform</h5>
+		 <p>
+		 	We release hundreds of features and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)
+		 </p>
+ </div>
+ 
+ 	<div class="c-i-b-c">
+		<div class="code-logo">
+			<svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="TerminalIcon">
+      <defs>
+      <path id="terminalIconCode" d="M44 28a4 4 0 0 1 4 4v17a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h24zm-23.2 5.17l-.67.75a.5.5 0 0 0-.02.64l.06.06 3.29 2.92-3.3 2.92a.5.5 0 0 0-.03.7l.66.76c.18.2.5.22.7.04l4.97-4.42-4.96-4.41a.5.5 0 0 0-.7.04z"></path>
+      <path id="terminalIconCursor" d="M27.64 40h6.72c.22 0 .3.02.38.07.09.04.15.1.2.19.04.08.06.16.06.38v.72c0 .22-.02.3-.07.38a.45.45 0 0 1-.19.2c-.08.04-.16.06-.38.06h-6.72c-.22 0-.3-.02-.38-.07a.45.45 0 0 1-.2-.19c-.04-.08-.06-.16-.06-.38v-.72c0-.22.02-.3.07-.38.04-.09.1-.15.19-.2.08-.04.16-.06.38-.06z"></path>
+      <path id="terminalIconGear" d="M42.5 42l1.13 3.13.64.13 2.24-2.46.93.38-.16 3.33c.19.11.37.23.54.36l3.02-1.42.7.71-1.41 3.02c.13.17.25.35.36.54l3.33-.16.38.93-2.46 2.24c.05.21.1.42.13.64L55 54.5v1l-3.13 1.13c-.04.25-.1.5-.15.73l2.48 2.15-.38.93-3.28-.24c-.14.24-.3.47-.47.7l1.48 2.94-.71.7-2.94-1.47c-.23.17-.46.33-.7.47l.24 3.28-.93.38-2.15-2.48c-.27.06-.54.12-.82.16L42.5 68h-1l-1.04-3.12c-.28-.04-.55-.1-.82-.16l-2.15 2.48-.93-.38.24-3.28c-.24-.14-.47-.3-.7-.47l-2.94 1.48-.7-.71 1.47-2.94c-.17-.23-.33-.46-.47-.7l-3.28.24-.38-.93 2.48-2.15a9.95 9.95 0 0 1-.16-.82L29 55.5v-1l3.12-1.04c.04-.25.08-.49.14-.73l-2.46-2.24.38-.93 3.33.16c.11-.19.23-.37.36-.54l-1.42-3.02.71-.7 3.02 1.41c.17-.13.35-.25.54-.36l-.16-3.33.93-.38 2.24 2.46s.42-.1.64-.13L41.5 42h1zM42 53a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+      <clipPath id="terminalIconClipPath">
+        <use href="#terminalIconCode"></use>
+      </clipPath>
+    </defs>
+
+    <use href="#terminalIconCode" fill="var(--blendForeground)"></use>
+    <use href="#terminalIconCursor" fill="var(--knockoutColor)" data-js-target="TerminalIcon.cursor"></use>
+    <use href="#terminalIconGear" fill="var(--blendBackground)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+    <g clip-path="url(#terminalIconClipPath)">
+      <use href="#terminalIconGear" fill="var(--blendIntersection)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+    </g>
+    </svg>
+		</div>	
+		 <h5>Battle-tested reliability</h5>
+		 <p>
+		 	Our systems operate with 99.99%+ uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.
+		 </p>
+ </div>
+ 
+ 	<div class="c-i-b-c">
+		<div class="code-logo">
+			<svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="TerminalIcon">
+      <defs>
+      <path id="terminalIconCode" d="M44 28a4 4 0 0 1 4 4v17a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h24zm-23.2 5.17l-.67.75a.5.5 0 0 0-.02.64l.06.06 3.29 2.92-3.3 2.92a.5.5 0 0 0-.03.7l.66.76c.18.2.5.22.7.04l4.97-4.42-4.96-4.41a.5.5 0 0 0-.7.04z"></path>
+      <path id="terminalIconCursor" d="M27.64 40h6.72c.22 0 .3.02.38.07.09.04.15.1.2.19.04.08.06.16.06.38v.72c0 .22-.02.3-.07.38a.45.45 0 0 1-.19.2c-.08.04-.16.06-.38.06h-6.72c-.22 0-.3-.02-.38-.07a.45.45 0 0 1-.2-.19c-.04-.08-.06-.16-.06-.38v-.72c0-.22.02-.3.07-.38.04-.09.1-.15.19-.2.08-.04.16-.06.38-.06z"></path>
+      <path id="terminalIconGear" d="M42.5 42l1.13 3.13.64.13 2.24-2.46.93.38-.16 3.33c.19.11.37.23.54.36l3.02-1.42.7.71-1.41 3.02c.13.17.25.35.36.54l3.33-.16.38.93-2.46 2.24c.05.21.1.42.13.64L55 54.5v1l-3.13 1.13c-.04.25-.1.5-.15.73l2.48 2.15-.38.93-3.28-.24c-.14.24-.3.47-.47.7l1.48 2.94-.71.7-2.94-1.47c-.23.17-.46.33-.7.47l.24 3.28-.93.38-2.15-2.48c-.27.06-.54.12-.82.16L42.5 68h-1l-1.04-3.12c-.28-.04-.55-.1-.82-.16l-2.15 2.48-.93-.38.24-3.28c-.24-.14-.47-.3-.7-.47l-2.94 1.48-.7-.71 1.47-2.94c-.17-.23-.33-.46-.47-.7l-3.28.24-.38-.93 2.48-2.15a9.95 9.95 0 0 1-.16-.82L29 55.5v-1l3.12-1.04c.04-.25.08-.49.14-.73l-2.46-2.24.38-.93 3.33.16c.11-.19.23-.37.36-.54l-1.42-3.02.71-.7 3.02 1.41c.17-.13.35-.25.54-.36l-.16-3.33.93-.38 2.24 2.46s.42-.1.64-.13L41.5 42h1zM42 53a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+      <clipPath id="terminalIconClipPath">
+        <use href="#terminalIconCode"></use>
+      </clipPath>
+    </defs>
+
+    <use href="#terminalIconCode" fill="var(--blendForeground)"></use>
+    <use href="#terminalIconCursor" fill="var(--knockoutColor)" data-js-target="TerminalIcon.cursor"></use>
+    <use href="#terminalIconGear" fill="var(--blendBackground)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+    <g clip-path="url(#terminalIconClipPath)">
+      <use href="#terminalIconGear" fill="var(--blendIntersection)" transform-origin="42 55" data-js-target-list="TerminalIcon.gears"></use>
+    </g>
+    </svg>
+		</div>	
+		 <h5>Intelligent optimizations</h5>
+		 <p>
+		 	Our machine learning models train on billions of data points and help increase revenue across conversion, fraud, revenue recovery, and more.
+		 </p>
+ </div>
+ 
+ 
+	
+</div>
+	</div>
+<div class="un-s-b rrr">
+	<div class="sb-1 sb-11"></div>
+	<div class="sb-2 sb-22"></div>
+</div>
+
+</section>
+
+
+<section class="scale">
+<div class="scale-content">
+<div class="scale-top">
+
+<h5 class="code-info-header">Global scale</h5>
+		<h2 class = "code-header-b">The backbone for internet business</h2>
+		
+<p class="code-p">
+For ambitious companies around the world, Stripe makes moving money as simple, borderless, and programmable as the rest of the internet. Our teams are based in dozens of offices around the world and we process hundreds of billions of dollars each year for <a href="" style="color: var(--accentColor)">startups to Fortune 500s.</a>
+</p>
+			
+	
+</div>
+
+<div class="scale-bottom">
+	 	<div class="c-i-b-c">	
+		 <h5>250M+</h5>
+		 <p>
+		 	Api requests per day, peaking at 13,000 request per second.
+		 </p>
+        </div><div class="c-i-b-c">	
+		 <h5>90%</h5>
+		 <p>
+		 	Of US adutls have bought from businesses using stripe.
+		 </p>
+        </div><div class="c-i-b-c">	
+		 <h5>135+</h5>
+		 <p>
+		 	Currencies and payment methods supported.
+		 </p>
+        </div><div class="c-i-b-c">	
+		 <h5>35+</h5>
+		 <p>
+		 	With local aquiring, optimizing acceptance rates
+		 </p>
+        </div>
+	
+</div>
+	</div>
+</section>
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+<section class="ready-container">
+	
+</section>
   
   
   
