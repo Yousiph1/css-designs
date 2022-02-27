@@ -21,9 +21,7 @@
 	--accentColorT:#635bff;
 	--backgroundColor: #f6f9fc;
 }
-body {
-	margin-bottom: 5em;
-}
+
 
 .nav-container {
 	display: flex;
@@ -1005,7 +1003,10 @@ border: 2px solid var(--accentColor
 .terminal {
 	padding: 20px;
 	padding-bottom: 150px;
-	background-color: rgba(0,0,0,0.3)
+	background-color: rgba(0,0,0,0.3);
+	border: .5px solid var(--accentColor);
+	border-radius: 8px;
+	border-top: 0;
 }
 
 .rp-ok {
@@ -1105,14 +1106,88 @@ border: 2px solid var(--accentColor
 
 
 .ready-container {
-	height: 500px;
+	--textColor: #3a3a3a;
+    --accentColorT: #0a2540;
+	--accentColor:#635bff;
+	display: grid;
+	padding-top: 120px;
+	background-color: white;
+	padding-left: var(--rootPadding);
+	padding-right: var(--rootPadding);
+	grid-template-columns: 1fr 1fr;
 	margin-top: -100px;
-	background-color: blue;
 	z-index: 1;
-	transform: skewY(0deg)
+	transform: skewY(0deg);
+	margin-bottom: 150px;
+}
+
+.ready-heading {
+	color: var(--accentColor)
+}
+
+.m-r {
+	font-size: 1.3rem;
+	max-width: 70%
+}
+
+.ready-left {
+	display: grid;
+	grid-template-columns: 1fr 1fr
+}
+
+.r-fancy {
+	font-weight: normal;
+	border-left: 1px solid var(--accentColor);
+	font-size: 1rem;
+	padding-left: .8em;
+	color: var(--textColor)
 }
 
 
+.footer {
+	background-color: var(--backgroundColor);
+	margin-bottom: 0;
+}
+
+.footer-content {
+	transform: skewY(5deg);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 50px var(--rootPadding);
+	padding-top: 150px
+}
+.f-list {
+	padding-left: var(--rootPadding)
+}
+.f-list ul li {
+	list-style: none;
+	color: var(--textColor);
+	margin-bottom: 10px;
+}
+
+.f-list ul::first-child{
+	margin-bottom: 50px;
+}
+
+.f-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.logo-f {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #0a2540
+}
+
+.f-empty {
+	background-color:var(--backgroundColor);
+	height: 150px;
+	transform: skewY(5deg);
+	margin-top: -50px;
+}
 @media only screen and (min-width: 900px) {
 	.gradient:after {
 		background: radial-gradient(var(--gradientColorThree) 23%,var(--gradientColorThreeTransparent) 67% 100%) 385px -24px,radial-gradient(var(--gradientColorOne) 0,var(--gradientColorOneTransparent) 60% 100%) -940px 290px,radial-gradient(var(--gradientColorTwo) 10%,var(--gradientColorTwoTransparent) 60% 100%) -120px 250px,radial-gradient(var(--gradientColorOne) 40%,var(--gradientColorOneTransparent) 57% 100%) 495px -44px,radial-gradient(var(--gradientColorZero) 30%,var(--gradientColorZeroTransparent) 67% 100%) 122px -120px,radial-gradient(var(--gradientColorZero) 10%,var(--gradientColorZeroTransparent) 60% 100%) -420px 120px,radial-gradient(var(--gradientColorTwo) 15%,var(--gradientColorTwoTransparent) 50% 100%) -620px 0,radial-gradient(var(--gradientColorTwo) 25%,var(--gradientColorTwoTransparent) 50% 100%) 520px -250px,var(--gradientColorZero);
