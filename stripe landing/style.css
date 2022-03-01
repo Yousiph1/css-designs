@@ -20,8 +20,17 @@
     --accentColor: #0a2540;
 	--accentColorT:#635bff;
 	--backgroundColor: #f6f9fc;
+	--blendForeground: var(--accentColorT);
+	--blendBackground: #00d4ff;
+	--blendIntersection: lightblue;
 }
 
+
+.NodesIcon__segment {
+	background-color: darkblue;
+	height: 23px;
+	width: 23px
+}
 
 .nav-container {
 	display: flex;
@@ -1016,6 +1025,7 @@ border: 2px solid var(--accentColor
 .why-container {
 	transform: skewY(-5deg);
 	position: relative;
+	--blendIntersection: blue;
 }
 
 
@@ -1109,6 +1119,7 @@ border: 2px solid var(--accentColor
 	--textColor: #3a3a3a;
     --accentColorT: #0a2540;
 	--accentColor:#635bff;
+	--blendIntersection: blue;
 	display: grid;
 	padding-top: 120px;
 	background-color: white;
