@@ -358,7 +358,8 @@ section {
 }
 
 .sec-hero {
-	margin-top: var(--space-24x)
+	margin-top: var(--space-24x);
+	overflow-x: hidden;
 }
 section > div {
 	text-align: center
@@ -556,9 +557,9 @@ section > div {
 	color: var(--accents-4)
 }
 
+/*
 .type-animation {
   overflow: hidden;
-  white-space: nowrap;
   margin: 0 auto 0 0; 
 }
 
@@ -577,42 +578,10 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 .comp-animation {
 	animation: complete 2s;
 }
+*/
 
-@keyframes typing {
-	from {
-		width: 0
-	}
-	to {
-		width: var(--width);
-	}
-}
-@keyframes typing2 {
-	0% {
-		width: 20px
-	}
-	70% {
-		width: 20px
-	}
-	100% {
-		width: var(--width);
-	}
-}
-@keyframes complete {
-	0% {
-		opacity: 0
-	}
-	99% {
-		opacity: 0
-	}
-	100% {
-		opacity: 1
-	}
-}
-@keyframes blink-caret {
-	0%, 100% { 
-		border-right: 2px solid transparent;
-		 }
-  50% { border-right: 2px solid var(--accents-5); }
+@media only screen and (max-width: 400px) {
+	
 }
 
 
@@ -630,6 +599,12 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 	width: 90%;
 	box-shadow: 1px 40px 100px -40px  var(--accents-3);
 	margin: var(--space-24x-negative) 0 0 var(--space-medium);
+}
+
+@media only screen and (max-width: 500px) {
+	.browser {
+		margin-left: 0;
+	}
 }
 .tb-b {
 	border-bottom: 1px solid var(--accents-2)
@@ -657,8 +632,11 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 	margin-top: var(--gap-double)
 }
 
-@media only screen and (max-width: 400px) {
-	
+@media only screen and (max-width: 500px) {
+	.framewoks {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr
+	}
 }
 
 .link_framework:hover > .tooltip_container::after {
@@ -736,11 +714,14 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 	padding-bottom: 250px;
 }
 
-@media only scree and (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 	.chaf-d-code {
 		padding-bottom: 50px;
+		display: grid;
+		place-items: center;
 	}
 }
+
 @media only screen and (min-width: 851px) {
 	.no-pd {
 	padding: 0;
@@ -760,7 +741,8 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 		margin-top: 0;
 	}
 	.three-f-parts {
-		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column-reverse
 	}
 	
 	.dash-line-container {
@@ -821,7 +803,8 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 	background-color: var(--background);
 	box-shadow: 0px 0px 10px  var(--accents-3);
 	width: 90%;
-	margin-inline: var(--gap)
+	align-self: center;
+	overflow-x: hidden;
 }
 .t-d-u {
 	text-decoration: underline
@@ -838,7 +821,7 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 .chats-cont {
 	display: grid;
 	padding-bottom: 200px;
-	text-align: center;
+	
 }
 
 .chat-cont {
