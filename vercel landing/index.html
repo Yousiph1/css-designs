@@ -6,7 +6,7 @@
 	<title>Vercel landing</title>
 	<link rel="stylesheet" href="./style.css">
 </head>
-<body class="light-theme">
+<body class="light-theme" id="body">
 <div class="prompt">
 <div class="main-wrapper">
   <div class="f-between">
@@ -37,7 +37,9 @@ class="main-wrapper header-main">
 	<li><a href="" class="n-t nav-link">Login</a></li>
 	<li><button class="button">Sign up</button></li>
 </ul>
-
+<div class="menu">
+	<div class="menu-line"></div>
+</div>
 </nav>
 </header>
 
@@ -324,7 +326,7 @@ Our platform enables frontend teams to do their best work.</p>
 	   </div>
 	   <div class="three-f-parts">
 	   	<div class="chaf-d-code">
-	   	<div class="code-react move-up">
+	   	<div class="code-terminal move-up">
 	   		<div class="code-tab t-b">
  			 	<div class="tb-cols-cont" style="flex-basis: 33.33%">
  			 		<span class="tab-colors" style="
@@ -367,7 +369,7 @@ Our platform enables frontend teams to do their best work.</p>
 	   
 	   <div class="one-two-parts no-margin">
 	   	<div class="arrange-left">
-	   			<div class="dash-line"></div>
+	   			<div class="sec-line no-dash"></div>
 	   			<div class="sec-circ"></div>
 	   </div>
 	   <div class="three-f-parts">
@@ -413,7 +415,7 @@ Our platform enables frontend teams to do their best work.</p>
 	   
 	   <div class="one-two-parts no-margin">
 	   	<div class="arrange-left">
-	   			<div class="dash-line"></div>
+	   			<div class="sec-line"></div>
 	   			<div class="sec-circ"></div>
 	   </div>
 	   <div class="three-f-parts">
@@ -495,7 +497,7 @@ Our platform enables frontend teams to do their best work.</p>
  		<div class="sec-first">
  		 <div class="gradient-cont" style="margin-top: 0;">
  		 	<div class="sec-gradient-line hide-b"></div>
- 		 	<div class="sec-gradient-circ"><p>1</p></div>
+ 		 	<div class="sec-gradient-circ"><p>3</p></div>
  		 </div>
  		 <h3 class="h3-gradient">Ship</h3>
  		</div>
@@ -515,19 +517,242 @@ Our platform enables frontend teams to do their best work.</p>
 					Speed is critical to customers - and for SEO. Vercel goes beyond just caching static content, scaling to <span class="style-t">millions of pages</span> through <span class="style-t">dynamic code execution</span>.
  				</p>
  			</div>
- 		</div>
- 			
- 		
- 		<div></div>
+ 		</div>	
  	</section>
  </div>
  
+ <section style="margin-top: var(--gap-double);">
+ 		<div class="metrics-container">
+ 		<div class="metric has-bd">
+ 			<h4>90</h4>
+ 			<p class="n-t">
+ 				CITIES
+ 			</p>
+ 		</div>
+ 		<div class="metric has-bd">
+ 			<h4>
+ 				24B+
+ 			</h4>
+ 			<p class="n-t">
+ 				REQUESTS
+ 			</p>
+ 		</div>
+ 		<div class="metric has-bd">
+ 			<h4>10PB</h4>
+ 			<p class="n-t">
+ 				DATA SERVED
+ 			</p>
+ 		</div>
+ 		<div class="metric">
+ 			<h4>99.99%</h4>
+ 			<p class="n-t">
+ 				GUARANTEED UPTIME
+ 			</p>
+ 		</div>
+ 		</div>
+ </section>
  
+ <div class="main-wrapper">
+ 	<section class="begin-sec">
+ 		<div class="sec-first" style="margin-bottom: var(--gap-double)">
+ 			<h4>BEGIN YOUR VERCEL JOURNEY</h4>
+ 		</div>
+ 		<div class="two-parts grid-gap">
+ 		
+ 			<div class="repository-cont">
+				<h2 class="sect-header-mid">Import git repository</h2>
+				
+ 				<div class="git-providers-cont">
+ 				<p class="n-t sm-t">
+ 					Select a Git provider to import an existing project from a Git repository
+ 				</p>
+ 				<div style="margin-top:var(--gap)">
+ 					<button class="git-provider"
+ 					style="
+ 					--color: black">Continue with GitHub</button>
+ 					<button class="git-provider"
+ 					style="
+ 					--color: var(--violet-light)">Continue with GitLab</button>
+ 					<button class="git-provider"
+ 					style="
+ 					--color: var(--success)">Continue with BitBucket</button>
+ 				</div>
+ 				</div>
+ 				<p class="n-t begin-end-t">Import Third-Party Git Repository</p>
+ 			</div>
+ 			
+ 			<div class="template-cont">
+ 			<h2>Clone template</h2>
+ 			<p class="n-t sm-t" style="margin-top: var(--gap-half);
+ 			margin-bottom: var(--gap-half);">Alternatively, get started with a template</p>
+ 			
+ 				<div class="framework-template-container">
+ 					<div class="framework-template">
+ 						<div>
+ 						<img 
+ 						class="template-image"
+ 						src="./nextjs.avif">
+ 						</div>
+ 						<div class="sss">
+ 							<p>Next.js</p>
+ 						</div>
+ 					</div>
+ 					
+ 					<div class="framework-template">
+ 						<div>
+ 						<img 
+ 						class="template-image"
+ 						src="./nextjs-commerce.webp">
+ 						</div>
+ 						<div class="sss">
+ 							<p>Next.js commerce</p>
+ 						</div>
+ 					</div>
+ 					
+ 					<div class="framework-template">
+ 						<div>
+ 						<img 
+ 						class="template-image"
+ 						src="./sveltekit.avif">
+ 						</div>
+ 						<div class="sss"><p>Sveltekit</p></div>
+ 					</div>
+ 					
+ 					<div class="framework-template">
+ 						<div>
+ 						<img 
+ 						class="template-image"
+ 						src="https://vercel.com/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1647366075%2Ffront%2Fimport%2Fnuxtjs.png&w=1920&q=75">
+ 						</div>
+ 						<div class="sss">
+ 							<p>Nuxt.js</p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<p class="n-t begin-end-t">Browse All Templates</p>
+ 				
+ 			</div>
+ 			
+ 		</div>
+ 	</section>
+ </div>
  
+ <section style="margin-top: 100px; margin-bottom: 150px">
+ 	<div class="sec-first" style="margin-bottom: var(--gap-double)">
+ 			<h4>TRUSTED BY THE BEST FRONTEND TEAMS</h4>
+ 		</div>
+ 	<marquee style="">
+ 	    <p>
+ 		<span class="slide-logo">Meta</span>
+			<span class="slide-logo">Google</span>
+ 		<span class="slide-logo">Auth0</span>
+ 		<span class="slide-logo">Hashicorp</span>
+ 		<span class="slide-logo">Tripadviser</span>
+ 		<span class="slide-logo">W. Post</span>
+ 		<span class="slide-logo">Toonji</span>
+ 		<span class="slide-logo">Meta</span>
+			<span class="slide-logo">Google</span>
+ 		<span class="slide-logo">Auth0</span>
+ 		<span class="slide-logo">Hashicorp</span>
+ 		<span class="slide-logo">Tripadviser</span>
+ 		<span class="slide-logo">W. Post</span>
+		</p>
+ 	</marquee>
+ </section>
 </main>
 
-
-
-
+<footer class="footer">
+	<div class="main-wrapper">
+	 <div class="footer-content">
+	 	<div class="f-con-cont">
+	 		<div class="f-content-header">
+	 <h5>Frameworks</h5>
+	 			<span>+</span>
+	 		</div>
+	 		<ul class="f-content-cont">
+	 		  <li>Next.js</li>
+	 		  <li>Create React App</li>
+	 		  <li>Svelte</li>
+	 		  <li>Nuxt</li>
+	 		  <li>Gatsby</li>
+	 		  <li>Vue</li>
+	 		  <li>Angular</li>
+	 		  <li>More Frameworks</li>
+			</ul>
+	 	</div>
+	 	<div class="f-con-cont">
+	 		<div class="f-content-header">
+	 			<h5>Resources</h5>
+	 			<span>+</span>
+	 		</div>
+	 		<ul class="f-content-cont">
+	 		  <li>Documentation</li>
+	 		  <li>Experts</li>
+	 		  <li>Customers</li>
+	 		  <li>Guides</li>
+	 		  <li>Support</li>
+	 		  <li>Api Reference</li>
+	 		  <li>OSS</li>
+	 		  <li>Command-Line</li>
+	 		  <li>Integrations</li>
+			</ul>
+	 	</div>
+	 	<div class="f-con-cont">
+	 		<div class="f-content-header">
+	 			<h5>Company</h5>
+	 			<span>+</span>
+	 		</div>
+	 		<ul class="f-content-cont">
+	 		  <li>Home</li>
+	 		  <li>Blog</li>
+	 		  <li>Change Logs</li>
+	 		  <li>About</li>
+	 		  <li>Careers</li>
+	 		  <li>Pricing</li>
+	 		  <li>Enterprise</li>
+	 		  <li>Security</li>
+	 		  <li>Next.js Conf</li>
+	 		  <li>Partners</li>
+	 		  <li>Contact Us</li>
+			</ul>
+	 	</div>
+	 	<div class="f-con-cont">
+	 		<div class="f-content-header">
+	 			<h5>Legal</h5>
+	 			<span>+</span>
+	 		</div>
+	 		<ul class="f-content-cont">
+	 		  <li>Privacy Policy</li>
+	 		  <li>Terms of Service</li>
+	 		  <li>Trademark Policy</li>
+	 		  <li>Inactivity Policy</li>
+	 		  <li>DMCA Policy</li>
+	 		  <li>DPA</li>
+	 		  <li>SLA</li>
+			</ul>
+	 	</div>
+	 </div>
+	<div class="foot-end">
+		<div class="footer-logo-cont">
+			<img src="./vercel-logotype-dark.png" >
+		</div>
+		<div style="margin-top: var(--gap-half)" class="copy-theme">
+			<div class="copy">
+				<p class="n-t sm-t">
+				  Copyright &copy; <span id="this-year"></span> Vercel Inc. All rights reserved.
+				</p>
+				<div><p>logo</p></div>
+			</div>
+			<div class="theme-cont">
+		    <select id="theme">
+		    	<option value="light" selected>light</option>
+		    	<option value="dark">dark</option>
+		    </select>
+			</div>
+		</div>
+	</div>
+	</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
