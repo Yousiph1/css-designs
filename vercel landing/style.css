@@ -721,7 +721,6 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 		padding-bottom: 70px;
 		display: grid;
 		place-items: center;
-		background-color: green;
 	}
 }
 
