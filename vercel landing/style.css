@@ -712,13 +712,16 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 
 .chaf-d-code {
 	padding-bottom: 250px;
+	background-color: red
 }
 
 @media only screen and (max-width: 850px) {
+	
 	.chaf-d-code {
-		padding-bottom: 50px;
+		padding-bottom: 70px;
 		display: grid;
 		place-items: center;
+		background-color: green;
 	}
 }
 
@@ -892,9 +895,6 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 		padding-bottom: 100px;
 	}
 	
-	.chaf-d-code {
-		padding-bottom: 150px;
-	}
 	.arrange-left {
 		margin-bottom: var(--gap)
 	}
