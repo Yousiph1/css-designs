@@ -712,7 +712,6 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 
 .chaf-d-code {
 	padding-bottom: 250px;
-	background-color: red
 }
 
 @media only screen and (max-width: 850px) {
@@ -972,7 +971,7 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 	padding: var(--gap-double);
 }
 .git-provider {
-	min-width: 150px;
+	width: 200px;
 	display: block;
 	color: white;
 	padding: var(--gap-half);
@@ -982,6 +981,23 @@ animation: typing, blink-caret 50ms var(--caret-dur) ;
 	font-weight: bold;
 	margin-bottom: var(--gap-quarter)
 }
+
+@media only screen and (max-width: 400px) {
+	.git-providers-cont {
+		padding-inline: var(--gap)
+	}
+	
+}
+
+@media only screen and (max-width: 350px) {
+	.git-provider {
+		font-size: 12px;
+		width: 130px
+	}
+}
+
+
+
 
 .begin-end-t {
 	font-size: 14px;
