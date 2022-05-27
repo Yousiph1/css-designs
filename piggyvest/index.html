@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-		<title>The Better Way To Save &amp; Invest</title>
+		<title>The Better Way To Save &amp; Invest Online - PiggyVest</title>
 	
 	<link rel="icon" href="./favicon.ico">
 	<link rel="stylesheet" href="./styles.css">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="PiggyVest is a very secure online savings platform that makes saving possible by combining discipline plus flexibility to make you grow your savings.">
 </head>
-<body class="light">
-<header>
+<body id ="body" class="light" onscroll="scrollfunc(this)">
+<header id="header">
 	<nav>
 		<div class="logo-container">
 	<svg width="192" height="37" viewBox="0 0 192 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,14 +72,17 @@
 		</button>
 		<button class="btn btn-heavy">Create free account</button>
 		</div>
+		<div class="hamburger" id="hamburger">
+		<span class="line"></span><span class="line"></span><span class="line"></span>
+		</div>
 	</nav>
 </header>
 <main>
- <section class="s-flex">
+ <section class="s-flex f-sec">
  
  <div class="hero hero-content-container">
 	 <h1 class="header-huge">The Better Way to Save & Invest.</h1>
-	 <p class="n-text">PiggyVest helps over 3 million customers achieve their financial goals by helping them save and invest with ease.</p>
+	 <p class="n-text padded-textt">PiggyVest helps over 3 million customers achieve their financial goals by helping them save and invest with ease.</p>
 
 	 <button class="btn btn-heavy">Create free account</button>
 	 <div class="store-container">
@@ -94,8 +99,18 @@
  </div>
  
  <div class="hero main-image-container">
+ <div class="main-img-inner">
  	<img class="header-image" src="./rect.png" alt="">
- 	<img class="header-image hi2" src="./headerImg.png" alt="">
+ 	<img class="header-image2" src="./headerImg.png" alt="">
+ 	<div class="dot-container">
+ 		<svg class="dot undefined headerIcon" width="33" height="108" viewBox="0 0 35 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1;"><circle cx="5" cy="5" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="5" cy="30" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="5" cy="55" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="5" cy="80" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="5" cy="105" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="30" cy="5" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="30" cy="30" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="30" cy="55" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="30" cy="80" r="5" fill="#2295F2" fill-opacity="0.28"></circle><circle cx="30" cy="105" r="5" fill="#2295F2" fill-opacity="0.28"></circle></svg>
+ 	</div>
+ 	<div class="cross-container">
+   <svg class="cross undefined headerIcon" width="75" height="75" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1;"><g opacity="0.2"><path d="M34.5601 36.8001H8.64014V28.4001H26.2401V10.5601H34.5601V36.8001Z" fill="#7913E5"></path><path d="M72.1602 36.8001H46.2402V10.5601H54.5602V28.4001H72.1602V36.8001Z" fill="#7913E5"></path><path d="M35.6798 69.6001H27.3598V51.7601H9.75977V43.3601H35.6798V69.6001Z" fill="#7913E5"></path><path d="M54.5602 69.6001H46.2402V43.3601H72.1602V51.7601H54.5602V69.6001Z" fill="#7913E5"></path></g></svg></div>
+ 	<img class="img-cards img-card1" src="./card1.png" alt="">
+ 	<img class="img-cards img-card2" src="./card2.png" alt="">
+ </div>
+ 	
  </div>
  	
  </section>
@@ -165,9 +180,9 @@
  style="--dotColor:#7913e5;--theBlue:#7913e5">
  <div class="invest-sec">
  	<div class="invest-img">
- 	<svg class="circle investIcon" width="280" height="280" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1;"><circle cx="150" cy="150" r="150" fill="white"></circle><circle cx="150" cy="150" r="100" stroke="#7913E5" stroke-opacity="0.07" stroke-width="100"></circle></svg>
+ 	<svg class="circle" width="280" height="280" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1;"><circle cx="150" cy="150" r="100" fill="var(--background)"></circle><circle cx="150" cy="150" r="100" stroke="var(--accents-2)" stroke-width="100"></circle></svg>
  		<img class=""src="invest.png" alt="">
- 		<svg class="dots" width="33" height="108" viewBox="0 0 35 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1;"><circle cx="5" cy="5" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="5" cy="30" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="5" cy="55" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="5" cy="80" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="5" cy="105" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="5" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="30" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="55" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="80" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="105" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle></svg>
+ 		<svg class="i-dots" width="33" height="108" viewBox="0 0 35 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate(0px, 0px); opacity: 1;"><circle cx="5" cy="5" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="5" cy="30" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="5" cy="55" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="5" cy="80" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="5" cy="105" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="5" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="30" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="55" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="80" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle><circle cx="30" cy="105" r="5" fill="var(--dotColor)" fill-opacity="0.28"></circle></svg>
  	</div>
  	
  	<div>
@@ -204,7 +219,7 @@
  <section class="c-t-main-sect">
  	<div class="marq-container">
  	<div class="overlay"></div>
- 		<marquee style="padding: var(--gap);height: 400px" direction="up">
+ 		<marquee style="padding: var(--gap);height: 400px" direction="up" class="marrq">
  		
  		<div class="happy-customer-container">
  			<p class="h-c-time">Tuesday, 1st of March 2022 by 20:20 PM</p>
@@ -318,7 +333,7 @@
  </section>
  
  
- <section class="features">;
+ <section class="features">
  <div>
 	 <h2 class="header-big">As featured in</h2>
  </div>
@@ -395,6 +410,40 @@ Okene close, Victoria Island,<br>Lagos, Nigeria.
 		
 		<p>2016 - 2022 PiggyTech Global Limited - RC 1405222</p>
 	</div>
+	<select  style="float: right; margin: var(--gap);font-size: 1.5rem" onchange="handleTheme(this)">
+		<option value="light" selected>light</option>
+		<option value="dark">dark</option>
+	</select>
 </footer>
+
+<script lang="text/javascript">
+	
+	
+	
+	function scrollfunc(e) {
+		const h = document.querySelector("#header")
+		if(e.scrollTop > 50 ||document.documentElement.scrollTop > 50) {
+			h.className = "scrolled"
+		}else {
+			h.className = ""
+		}
+	}
+	
+	
+	function handleTheme(e) {
+		const body = document.querySelector("#body")
+		const elem = document.documentElement
+		if(e.value === "light") {
+			body.className = "light"
+			elem.style.colorScheme = "light"
+		}else {
+			body.className = "dark"
+			elem.style.colorScheme = "dark"
+		}
+	}
+	
+	
+	
+	</script>
 </body>
 </html>
