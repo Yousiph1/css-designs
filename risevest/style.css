@@ -67,6 +67,10 @@ a {
 	color: var(--accents-4);
 }
 
+.header-normal {
+	font-size: calc(var(--huge-font) * 0.45)
+}
+
 
 @media only screen and (min-width: 1100px) {
 	body {
@@ -259,12 +263,21 @@ a {
 	.sect-primary {
 		flex-direction: column;
 		text-align: center;
+		padding-inline: 15%
 	}
 }
 
-.reverse-order {
+
+.reverse-order, .resverse-order2 {
 	order: 2;
 }
+
+@media only screen and (max-width: 800px) {
+	.reverse-order, .resverse-order2 {
+	order: 0;
+}
+}
+
 
 .sect-p-text-container {
 	display: flex;
@@ -273,6 +286,100 @@ a {
 }
 
 
+.asserts-t-con {
+	text-align: center;
+}
 
+.assert-items-container {
+	display: flex;
+	gap: var(--gap-half)
+}
 
+@media only screen and (max-width: 850px) {
+	.assert-items-container {
+		flex-direction: column;
+		gap: var(--gap);
+	}
+}
+
+.text-faded {
+	color: var(--accents-3)
+}
+
+.assert-item {
+	padding-top: 150px;
+	border-radius: 15px;
+	margin: var(--gap-2x) 0;
+	box-shadow: 0 0 5px var(--accents-2);
+	background-color: #F6F2FF;
+	flex-basis: 100%;
+	
+}
+.assert-item:nth-child(1){
+	background-color:#FFF4F0;
+}
+.assert-item:nth-child(3){
+	background-color: #DBFFF8
+}
+
+.assert-i-content-container {
+	display: grid;
+	place-items: center;
+	text-align: center;
+	position: relative;
+	background-color: white;
+	padding: var(--gap-half);
+	height: 100%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	padding-top: 0;
+
+}
+
+@media only screen and (max-width: 800px) {
+	.assert-i-content-container {
+		padding-inline: 10%;
+	}
+}
+
+.assert-i-content-container h2 {
+	margin-bottom: var(--gap)
+}
+
+.assert-icon-container img {
+	transform: translateY(-50%);
+	border: 10px solid white;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+}
+
+.risk-info {
+	margin-top: var(--gap);
+	margin-bottom: var(--gap-half)
+}
+
+.build-img-container img {
+	width: min(90%,600px)
+	
+}
+
+@media only screen and (max-width: 800px) {
+	.build-cont {
+
+		display: grid;
+		place-items: center;
+	}
+}
+
+.btn {
+	color: var(--btn-color);
+	font-size: 1rem;
+	background-color: var(--btn-bg-color);
+    padding: .9em .9em;
+	border-radius: 5px;
+	margin-top: var(--gap);
+	cursor: pointer;
+	width: max-content;
+}
 
