@@ -138,6 +138,53 @@ a {
 	left: 50%;
 	transform: translateX(-50%;)
 }
+.has-prompt {
+	position: relative;
+}
+.has-prompt:hover + .prompt {
+	display: block;
+}
+
+.prompt {
+	display: none;
+	position: absolute;
+	width: 200px;
+	color: var(--primary-color);
+	padding: var(--gap-half);
+	box-shadow: 0 0 10px -5px var(--accents-3);
+	border-radius: 5px;
+}
+
+.humburger-container {
+	display: none;
+}
+
+.h-line {
+	background-color: var(--primary-color);
+	height: 3px;
+	width: 20px;
+}
+
+.h-line:nth-child(1), .h-line:nth-child(3) {
+	width: 10px
+}
+.h-line:nth-child(1) {
+	align-self: flex-end;
+}
+
+
+.hero-image-container {
+	flex-basis: 100%;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+	.humburger-container {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+}
 
 .main-flex {
 	display: flex;
@@ -173,7 +220,8 @@ a {
 @media only screen and (min-width: 800px) {
 	.text-80 {
 	max-width: 80%;
-}
+  }
+	
 }
 
 .hero-image-container {
@@ -182,12 +230,12 @@ a {
 	justify-content: flex-end
 }
 .hero-image-container > div {
-	width: min(90%,270px);
+	width: min(90%,250px);
 }
 
 .hero-image-container img {
-	width: min(90%, 250px);
-	height: 470px;
+	width:100%;
+	aspect-ratio: 1/2;
 	border-radius: 25px;
 	box-shadow:  0 0 50px -10px var(--accents-3);
 	animation: bouncing 1s linear infinite alternate;
@@ -234,6 +282,11 @@ a {
 	.hero-btns-cont {
 		justify-content: center;
 	}
+	.hero-image-container {
+	flex-basis: 100%;
+	justify-content: center;
+		margin-top: var(--gap-2x)
+   }
 }
 
 @media only screen and (max-width: 350px) {
