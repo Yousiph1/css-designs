@@ -73,7 +73,7 @@ a {
 
 
 @media only screen and (min-width: 1100px) {
-	body {
+	body, main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -382,4 +382,134 @@ a {
 	cursor: pointer;
 	width: max-content;
 }
+
+.style-sect {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: var(--gap-4x);
+	gap: var(--gap-2x)
+}
+
+.u-style-cont {
+	flex-basis: 100%;
+}
+
+.u-style {
+	background-color:var(--u-bg-color);
+	width: 100%;
+	height: 200px;
+	filter: blur(40px);
+	mix-blend-mode: multiply
+    
+}
+
+.style-sect .content {
+	text-align: center;
+}
+
+
+
+@keyframes marq {
+	from { transform: translateX(100%) }
+	to { transform: translateX(-100%) }
+}
+
+.testimo-card {
+	width: 300px;
+	padding: var(--gap);
+	box-shadow: 0 0 10px -5px var(--primary-color);
+	border-radius: 15px;
+	flex-shrink: 0;
+}
+
+.testimo-card > p {
+	color: red;
+	white-space: pre-wrap
+}
+.testimo-profile {
+	display: flex;
+	align-items: center;
+	gap: var(--gap-half)
+}
+
+
+.testimo-cards-container {
+	display: flex;
+	flex-shrink: 0;
+}
+.testimo-profile {
+	margin-top: var(--gap);
+}
+.testimo-profile img {
+	height: 40px;
+	width: 40px;
+}
+
+.comm-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+	width: 90%
+}
+@media only screen and (max-width: 800px) {
+	.comm-content {
+		display: grid;
+		place-items: center;
+		grid-gap: var(--gap);
+		width: 100%
+	}
+}
+
+
+.comm-img-cont {
+	width: min(100%,500px)
+}
+
+.comm-img-cont > img {
+	width:100%;
+}
+
+.download-content {
+	display: grid;
+	grid-gap: var(--gap)
+}
+.down-sec-dv {
+	display: flex;
+	flex-basis: 80%;
+	justify-content: center;
+}
+
+.sect-dw {
+	margin-top: var(--gap-4x) !important;
+	background-color: #E6F5F6;
+	padding: var(--gap); 
+	border-radius: 25px;
+	gap:var(--gap-2x);
+	height: 550px;
+	overflow-y: hidden;
+}
+.rise-p-cont {
+	width: min(100%,250px);
+}
+
+
+.rise-p-cont img {
+	width: 100%
+}
+
+@media only screen and (max-width: 800px) {
+	.download-content {
+		display: grid;
+		place-items: center;
+	}
+	.down-sec-dv {
+		margin-top: var(--gap);
+	}
+}
+
+
+
+
+
 
