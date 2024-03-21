@@ -103,7 +103,6 @@ a {
     height: 700px;
 	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 90%)
 }
-}
 .gradient {
 	position: relative;
     display: block;
@@ -721,6 +720,10 @@ border: 2px solid var(--accentColor
 	padding-top: 10px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid lightgrey;
+}
+.width-control {
+	width:min(1300px, 100vw);
+	margin-inline: auto;
 }
 
 .p-com {
